@@ -9,20 +9,20 @@ defineProps({
 <template>
 <div class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
-    <div class="dropdown">
-        <div class="text-blue-500 text-lg">
-            <h2>Florian</h2>
-        </div>
 
-    <div class="">
-      <button class="btn btn-soft">What's Up</button>
-      <button class="btn btn-soft btn-primary">Bruh</button>
-    </div>
-    </div>
+    <a class="btn btn-ghost text-xl">Florian</a>
   </div>
-  <div class="navbar-center">
-    <a class="text-green-500 text-lg">Take over the world</a>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><router-link to="/">Accueil</router-link></li>
+      <li><router-link to="/contact">Contact</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/exercises">Exos</router-link></li>
+    </ul>
   </div>
-
+  <div class="navbar-end">
+    <a class="btn">Button</a>
+  </div>
 </div>
+
 </template>
