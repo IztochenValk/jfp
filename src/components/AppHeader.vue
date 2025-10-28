@@ -19,6 +19,7 @@ defineProps({
       <li><router-link to="/about">About</router-link></li>
       <li><router-link to="/exercises">Exos variables</router-link></li>
       <li><router-link to="/vbindexo">Exo Binding</router-link></li>
+      <li><router-link to="/eventbinding">Event Binding</router-link></li>
 
     </ul>
   </div>

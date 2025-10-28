@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Contact from '@/views/Contact.vue'
 import About from '@/views/About.vue'
 import Exercises from '@/views/Exercises.vue'
+import EventBindingExo from '@/views/EventBindingExo.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -35,6 +36,11 @@ const router = createRouter({
             path: '/vbindexo',
             name: 'exercises',
             component: ()=> import('@/views/VBindExo.vue')
+        },
+        {
+            path: '/eventbinding',
+            name: 'eventbinding',
+            component: ()=> import('@/views/EventBindingExo.vue')
         },
     ]
 })

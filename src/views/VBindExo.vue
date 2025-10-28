@@ -30,6 +30,20 @@
                                 <div class="badge badge-soft badge-success">{{ user.age + 10}}</div>
                             </td>                        
                         </tr>
+                        <tr>
+                            <td>Racconte ta life</td>
+                            <td>
+                                <input v-model="user.racconteTaLife" />
+                            </td>                        
+                        </tr>
+                        <tr>
+                            <td>
+                                Ma life passionante
+                            </td>
+                            <td>
+                                 <span>{{ user.racconteTaLife }}</span>
+                            </td>
+                        </tr>
                     </tbody>
                     </table>
                 </div>
@@ -38,12 +52,14 @@
 
 <script setup>
 import { ref } from 'vue'
+import { reactive } from 'vue'
 
-let user = {
+let user = ref({
     name: 'Dr Mario',
     age: 30,
     luckyNumber: Math.random(0,14789),
-    img: "https://s3.amazonaws.com/medium.cosplay.com/77883/2111288.jpg"
-}
+    img: "https://s3.amazonaws.com/medium.cosplay.com/77883/2111288.jpg",
+    racconteTaLife: "Ecris ta life ici"
+})
 
 </script>
