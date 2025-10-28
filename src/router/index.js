@@ -20,16 +20,21 @@ const router = createRouter({
             component: Contact
         },
         {
-            path: '/',
+            path: '/about',
             alias: '/about',
             name: 'about',
             component: About
         },
         {
-            path: '/',
+            path: '/exercises',
             alias: '/exercises',
             name: 'exercises',
             component: ()=> import('@/views/Exercises.vue')
+        },
+        {
+            path: '/vbindexo',
+            name: 'exercises',
+            component: ()=> import('@/views/VBindExo.vue')
         },
     ]
 })

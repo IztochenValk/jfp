@@ -17,7 +17,9 @@ defineProps({
       <li><router-link to="/">Accueil</router-link></li>
       <li><router-link to="/contact">Contact</router-link></li>
       <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/exercises">Exos</router-link></li>
+      <li><router-link to="/exercises">Exos variables</router-link></li>
+      <li><router-link to="/vbindexo">Exo Binding</router-link></li>
+
     </ul>
   </div>
   <div class="navbar-end">
