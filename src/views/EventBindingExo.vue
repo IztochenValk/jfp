@@ -39,7 +39,7 @@
             <div class="mt-6 mb-4 card bg-base-200 shadow-lg rounded-box p-4">
                 <h6 class="text-xl font-semibold mb-2">Événement <code>@click</code></h6>
 
-                <button class="btn btn-error text-white" @click="displayAlert('Hello Saturn')">
+                <button class="btn btn-error text-white" v-on:click="displayAlert('Hello Saturn')">
                     Afficher une alerte
                 </button>
             </div>

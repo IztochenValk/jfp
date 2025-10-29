@@ -42,6 +42,21 @@ const router = createRouter({
             name: 'eventbinding',
             component: ()=> import('@/views/EventBindingExo.vue')
         },
+        {
+            path: '/username',
+            name: 'username',
+            component: ()=> import('@/views/ExoUserName.vue')
+        },
+       {
+            path: '/watchers',
+            name: 'watchers',
+            component: ()=> import('@/views/LessonWatchers.vue')
+        },
+       {
+            path: '/exos-aprem',
+            name: 'exos-aprem',
+            component: ()=> import('@/views/ExosAprem.vue')
+        },
     ]
 })
 
